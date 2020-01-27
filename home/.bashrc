@@ -113,7 +113,7 @@ fi
 ## HENCEFORTH THESE ARE MY OWN CHANGES ##
 #########################################
 # Add ~/.scripts to PATH variable
-PATH=$PATH:$HOME/.scripts
+PATH=$PATH:$HOME/bin
 
 # reload bashrc file
 alias brc='source ~/.bashrc'
@@ -148,3 +148,6 @@ function swap()
 alias sublime='subl'
 
 eval "$(thefuck --alias)"
+
+# When I install a package, add the package name to a file
+alias pacman="$HOME/bin/update_package_list.sh"
