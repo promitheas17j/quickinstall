@@ -13,22 +13,22 @@ mv $HOME/.config/sublime-text-3/Packages/User/'Preferences.sublime-settings' $HO
 mv $HOME/.dir_colors $HOME/.dir_colors.bak
 
 # Use my configs 
-mv ../.bashrc $HOME/
-mv ../.config/conky1.10_shortcuts_maia_custom $HOME/.config/
-mv ../.config/conky_maia_custom $HOME/.config/
-mv ../.config/neofetch/config.conf $HOME/.config/neofetch/
-mv ../.config/ranger/* $HOME/.config/ranger/
-mv ../.config/sublime-text-3/Packages/User/* $HOME/.config/sublime-text-3/Packages/User/
-mv ../.dir_colors $HOME/
-mv ../Documents/cheat_sheets $HOME/Documents/
-mv ../.i3/* $HOME/.i3/
-mv ../Pictures/ocean.jpg $HOME/Pictures/
-mv ../.vim/colors/* $HOME/.vim/colors/
+mv home/bashrc $HOME/
+mv home/config/conky1.10_shortcuts_maia_custom $HOME/.config/
+mv home/config/conky_maia_custom $HOME/.config/
+mv home/config/neofetch/config.conf $HOME/.config/neofetch/
+mv home/config/ranger/* $HOME/.config/ranger/
+mv home/config/sublime-text-3/Packages/User/* $HOME/.config/sublime-text-3/Packages/User/
+mv home/dir_colors $HOME/
+mv home/Documents/cheat_sheets $HOME/Documents/
+mv home/i3/* $HOME/.i3/
+mv home/Pictures/ocean.jpg $HOME/Pictures/
+mv home/vim/colors/* $HOME/.vim/colors/
 
 # Restore directories
-mv ../bin $HOME/
+mv home/bin $HOME/
 
 # Settings side $HOME
 sudo mv /etc/vimrc /etc/vimrc.bak
 sudo cp $HOME/.vimrc /etc/vimrc
-sudo mv ../.vim/colors/* /usr/share/vim/vim82/colors/
+sudo mv home/vim/colors/* /usr/share/vim/vim82/colors/
