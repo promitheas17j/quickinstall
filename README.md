@@ -7,9 +7,9 @@
 
 ## Install instructions
 
-'''bash
+```bash
 git clone https://github.com/promitheas17j/quickinstall.git 
 cd quickinstall/quick-install-scripts
 ./install_software.sh
 ./restore.sh
-'''
+```
