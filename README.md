@@ -18,7 +18,7 @@
 ```bash
 git clone https://github.com/promitheas17j/quickinstall.git 
 
-cd quickinstall/quick-install-scripts
+cd quickinstall/
 
 ./install_software.sh
 
