@@ -1,0 +1,37 @@
+conky.config = {
+	alignment = 'bottom_left',
+	background = true,
+	color0 = '1e8792', -- Dark green/blue
+	default_color = '3ecad8', -- Light green/blue
+	cpu_avg_samples = 2,
+	double_buffer = true,
+	font = 'Bitstream Vera Sans:bold:size=8',
+	draw_shades = false,
+	gap_x = 25,
+	gap_y = 45,
+	minimum_width = 200,
+	no_buffers = true,
+	own_window = true,
+	own_window_type = 'override',
+	own_window_transparent = true,
+	update_interval = 2.0,
+	use_xft = true,
+}
+conky.text = [[
+${color0}i3 Cheat Sheet
+${color0}open new terminal - ${color}mod+Enter
+${color0}kill focused - ${color}mod+q
+${color0}open browser - ${color}mod+F2
+${color0}toggle split direction - ${color}mod+t
+${color0}dmenu - ${color}mod+d
+${color0}bmenu - ${color}mod+Ctrl+b
+${color0}morc_menu - ${color}mod+z
+${color0}switch to workspace 1-8 - ${color}mod+1-8
+${color0}send to workspace 1-8 - ${color}mod+Ctrl+1-8
+${color0}navigate workspaces - ${color}mod+Ctrl+arrowkeys
+${color0}toggle floating - ${color}mod+Shift+Space
+${color0}exit - ${color}mod+0
+
+${color0}help - ${color}mod+Shift+h
+default mod=<Super>
+]]

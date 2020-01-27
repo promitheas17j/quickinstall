@@ -1,0 +1,41 @@
+Commands will have to be run with root access or sudo
+
+Enable the firewall:
+--------------------
+ufw enable
+
+Rules:
+------
+ufw allow <port #> (Allows both TCP and UDP traffic - not ideal if  UDP is not necessary.)
+
+ufw allow <port #>/[tcp/udp] (Allows only TCP or UDP traffic on <port #> according to which you specify.)
+
+ufw allow ssh (Checks the /etc/services file on your system for the port that SSH requires and allows it. Many common services are listed in this file.)
+
+---+ Ufw assumes you want to set the rule for incoming traffic, but you can also specify a direction.
+
+ufw reject out ssh (Blocks outgoing ssh traffic.)
+
+ufw status (View the rules you've created.)
+
+ufw delete <rule> (To delete a rule simply add the word "delete" before the rule.)
+
+Complex rules:
+--------------
+ufw deny proto tcp from <ip address> to any port 22 (Denies TCP traffic from <ip address> to port 22 on the local system.)
+
+Misc commands:
+--------------
+
+ufw reset (Resets the firewall to its default state.)
+
+ufw app list (Lists application profiles available on your local system.)
+
+ufw app info <App name> (View information about a profile and its included rules.)
+
+ufw allow <App name> (Allow an application profile.)
+
+Logging:
+--------
+
+ufw logging on/off (Enable/disable logging. Disabled by default.)

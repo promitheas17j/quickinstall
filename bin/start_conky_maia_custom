@@ -1,0 +1,8 @@
+#!/bin/bash
+
+conky -c /home/promitheas/.config/conky1.10_shortcuts_maia_custom &&
+conky -c /home/promitheas/.config/conky_maia_custom &&
+# conky -c /usr/share/conky/conky1.10_shortcuts_maia &&
+# conky -c /usr/share/conky/conky_maia &&
+
+exit 0

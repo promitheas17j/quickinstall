@@ -1,0 +1,8 @@
+{
+	"auto_close_tags": false,
+	"autocomplete": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	]
+}
