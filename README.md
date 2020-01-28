@@ -1,9 +1,9 @@
 # quickinstall
 
-### Contents:
+## Contents:
 1. [Install instructions](https://github.com/promitheas17j/quickinstall#install-instructions)
 
-## Install instructions
+### Install instructions
 
 1. Clone the quickinstall repository to your desired directory
 1. cd into the directory you cloned into
