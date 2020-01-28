@@ -3,32 +3,32 @@
 # Restores configs and other folders from quickinstall directory to their proper places after installing all programs.
 
 # Backup existing default configs
-mv $HOME/.bashrc $HOME/.bashrc.bak
-mv $HOME/.config/neofetch/config.conf $HOME/.config/neofetch/config.conf.bak
-mv $HOME/.config/ranger/commands.py $HOME/.config/ranger/commands.py.bak
-mv $HOME/.config/ranger/rc.conf $HOME/.config/ranger/rc.conf.bak
-mv $HOME/.config/ranger/scope.sh $HOME/.config/ranger/scope.sh.bak
-mv $HOME/.config/sublime-text-3/Packages/User/'Package Control.sublime-settings' $HOME/.config/sublime-text-3/Packages/User/'Package Control.sublime-settings.bak'
-mv $HOME/.config/sublime-text-3/Packages/User/'Preferences.sublime-settings' $HOME/.config/sublime-text-3/Packages/User/'Preferences.sublime-settings.bak'
-mv $HOME/.dir_colors $HOME/.dir_colors.bak
+cp $HOME/.bashrc $HOME/.bashrc.bak
+cp $HOME/.config/neofetch/config.conf $HOME/.config/neofetch/config.conf.bak
+cp $HOME/.config/ranger/commands.py $HOME/.config/ranger/commands.py.bak
+cp $HOME/.config/ranger/rc.conf $HOME/.config/ranger/rc.conf.bak
+cp $HOME/.config/ranger/scope.sh $HOME/.config/ranger/scope.sh.bak
+cp $HOME/.config/sublime-text-3/Packages/User/'Package Control.sublime-settings' $HOME/.config/sublime-text-3/Packages/User/'Package Control.sublime-settings.bak'
+cp $HOME/.config/sublime-text-3/Packages/User/'Preferences.sublime-settings' $HOME/.config/sublime-text-3/Packages/User/'Preferences.sublime-settings.bak'
+cp $HOME/.dir_colors $HOME/.dir_colors.bak
 
 # Use my configs 
-mv home/bashrc $HOME/
-mv home/config/conky1.10_shortcuts_maia_custom $HOME/.config/
-mv home/config/conky_maia_custom $HOME/.config/
-mv home/config/neofetch/config.conf $HOME/.config/neofetch/
-mv home/config/ranger/* $HOME/.config/ranger/
-mv home/config/sublime-text-3/Packages/User/* $HOME/.config/sublime-text-3/Packages/User/
-mv home/dir_colors $HOME/
-mv home/Documents/cheat_sheets $HOME/Documents/
-mv home/i3/* $HOME/.i3/
-mv home/Pictures/ocean.jpg $HOME/Pictures/
-mv home/vim/colors/* $HOME/.vim/colors/
+cp home/bashrc $HOME/
+cp home/config/conky1.10_shortcuts_maia_custom $HOME/.config/
+cp home/config/conky_maia_custom $HOME/.config/
+cp home/config/neofetch/config.conf $HOME/.config/neofetch/
+cp home/config/ranger/* $HOME/.config/ranger/
+cp home/config/sublime-text-3/Packages/User/* $HOME/.config/sublime-text-3/Packages/User/
+cp home/dir_colors $HOME/
+cp home/Documents/cheat_sheets $HOME/Documents/
+cp home/i3/* $HOME/.i3/
+cp home/Pictures/ocean.jpg $HOME/Pictures/
+cp home/vim/colors/* $HOME/.vim/colors/
 
 # Restore directories
-mv home/bin $HOME/
+cp home/bin $HOME/
 
-# Settings side $HOME
-sudo mv /etc/vimrc /etc/vimrc.bak
+# Settings outside $HOME
+sudo cp /etc/vimrc /etc/vimrc.bak
 sudo cp $HOME/.vimrc /etc/vimrc
-sudo mv home/vim/colors/* /usr/share/vim/vim82/colors/
+sudo cp home/vim/colors/* /usr/share/vim/vim82/colors/

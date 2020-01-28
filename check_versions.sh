@@ -40,16 +40,6 @@ else
 	echo "feh" >> install_error
 fi
 
-
-command -v git 
-if [ $? -eq 0 ]
-then
-	echo "Git installed successfully..."
-else
-	echo "git" >> install_error
-fi
-
-
 command -v hexchat 
 if [ $? -eq 0 ]
 then
