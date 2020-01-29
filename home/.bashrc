@@ -112,7 +112,7 @@ fi
 #########################################
 ## HENCEFORTH THESE ARE MY OWN CHANGES ##
 #########################################
-# Add ~/.scripts to PATH variable
+# Add ~/bin to PATH variable
 PATH=$PATH:$HOME/bin
 
 # reload bashrc file
@@ -151,3 +151,9 @@ eval "$(thefuck --alias)"
 
 # When I install a package, add the package name to a file
 alias pacman="$HOME/bin/update_package_list.sh"
+
+# Force ncmpcpp to use sane bindings
+alias mupl="ncmpcpp -b $HOME/.config/ncmpcpp/bindings"
+
+# Always run mpd in verbose mode
+alias mpd='mpd -v'
