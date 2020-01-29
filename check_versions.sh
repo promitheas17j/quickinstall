@@ -171,3 +171,19 @@ then
 else
 	echo "valgrind" >> install_error
 fi
+
+command -v mpd
+if [ $? -eq 0 ]
+then
+	echo "mpd installed successfully..."
+else
+	echo "mpd" >> install_error
+fi
+
+command -v ncmpcpp
+if [ $? -eq 0 ]
+then
+	echo "ncmpcpp installed successfully..."
+else
+	echo "ncmpcpp" >> install_error
+fi

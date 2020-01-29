@@ -2,6 +2,18 @@
 
 # Restores configs and other folders from quickinstall directory to their proper places after installing all programs.
 
+# Restore directories
+cp home/bin $HOME/
+cp home/Documents/cheat_sheets $HOME/Documents/
+if [[ ! -e $HOME/.config/mpd ]]
+then
+	mkdir $HOME/.config/mpd
+fi
+if [[ ! -e $HOME/.ncmpcpp ]]
+then
+	mkdir $HOME/.ncmpcpp
+fi
+
 # Backup existing default configs
 cp $HOME/.bashrc $HOME/.bashrc.bak
 cp $HOME/.config/neofetch/config.conf $HOME/.config/neofetch/config.conf.bak
@@ -20,13 +32,9 @@ cp home/config/neofetch/config.conf $HOME/.config/neofetch/
 cp home/config/ranger/* $HOME/.config/ranger/
 cp home/config/sublime-text-3/Packages/User/* $HOME/.config/sublime-text-3/Packages/User/
 cp home/dir_colors $HOME/
-cp home/Documents/cheat_sheets $HOME/Documents/
 cp home/i3/* $HOME/.i3/
 cp home/Pictures/ocean.jpg $HOME/Pictures/
 cp home/vim/colors/* $HOME/.vim/colors/
-
-# Restore directories
-cp home/bin $HOME/
 
 # Settings outside $HOME
 sudo cp /etc/vimrc /etc/vimrc.bak
