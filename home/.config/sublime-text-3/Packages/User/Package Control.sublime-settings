@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
-		"LoremIpsum"
+		"LoremIpsum",
+		"Package Control"
 	]
 }
