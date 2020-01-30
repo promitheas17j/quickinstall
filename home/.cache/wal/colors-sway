@@ -1,0 +1,21 @@
+set $wallpaper /home/promitheas/Pictures/ocean_darker.jpg
+
+set $background #030C1C
+set $foreground #1f74e5
+
+set $color0 #030C1C
+set $color1 #263C87
+set $color2 #2F4598
+set $color3 #454AC6
+set $color4 #595AEE
+set $color5 #664FFB
+set $color6 #5D90FD
+set $color7 #1f74e5
+set $color8 #7b90ac
+set $color9 #263C87
+set $color10 #2F4598
+set $color11 #454AC6
+set $color12 #595AEE
+set $color13 #664FFB
+set $color14 #5D90FD
+set $color15 #1f74e5

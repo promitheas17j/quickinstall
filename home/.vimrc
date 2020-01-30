@@ -4,6 +4,7 @@ let mapleader =" "
 	set number relativenumber
 	syntax on
 	set hls is
+	set cursorline
 
 " Enable autocompletion:
 	set wildmode=longest,list,full
@@ -35,6 +36,13 @@ let mapleader =" "
 " Clear last used search pattern
 	map <leader>c :let @/ = ""<CR> 
 
+" Reload vim in-place
+	map <leader>r :source ~/.vimrc<CR>
+	
+" Highlight cursor line
+	:hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white	
+
 " Colorscheme
 " To preview colorschemes go to: bytefluent.com/vivify/
+" colorscheme transparent
 colorscheme herald
