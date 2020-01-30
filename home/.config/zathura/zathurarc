@@ -1,0 +1,27 @@
+# Main settings
+set selection-clipboard clipboard
+set window-title-home-tilde true
+set statusbar-home-tilde true
+set adjust-open best-fit
+set show-scrollbars true
+set page-padding 5
+set render-loading false
+
+# Color settings
+set default-bg \#223344
+set default-fg \#eeeeee
+set inputbar-bg \#001116
+set inputbar-fg \#a466b7
+#set inputbar-fg \#a488d7
+set statusbar-bg \#191919
+set statusbar-fg \#9f8bab
+set highlight-active-color \#d473f9
+set highlight-color \#6b3baa
+
+# Keybindings
+map <S-g> goto bottom
+map gg goto top
+map <PageDown> zoom out
+map <PageUp> zoom in
+map q quit
+map <C-r> reload
