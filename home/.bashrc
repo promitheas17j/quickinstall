@@ -157,3 +157,6 @@ alias mupl="ncmpcpp -b $HOME/.config/ncmpcpp/bindings"
 
 # Always run mpd in verbose mode
 alias mpd='mpd -v'
+
+# Always fork zathura to background
+alias zathura='zathura --fork'
