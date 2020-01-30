@@ -14,6 +14,11 @@ then
 	mkdir $HOME/.ncmpcpp
 fi
 
+if [[ ! -e $HOME/.votecoin ]]
+then
+	mkdir $HOME/.votecoin
+fi
+
 # Backup existing default configs
 cp $HOME/.bashrc $HOME/.bashrc.bak
 cp $HOME/.config/neofetch/config.conf $HOME/.config/neofetch/config.conf.bak
@@ -35,6 +40,7 @@ cp home/dir_colors $HOME/
 cp home/i3/* $HOME/.i3/
 cp home/Pictures/ocean.jpg $HOME/Pictures/
 cp home/vim/colors/* $HOME/.vim/colors/
+cp home/.votecoin/votecoin.conf $HOME/.votecoin/
 
 # Settings outside $HOME
 sudo cp /etc/vimrc /etc/vimrc.bak

@@ -187,3 +187,5 @@ then
 else
 	echo "ncmpcpp" >> install_error
 fi
+
+echo "Done checking. Might want to take a loot at the install.log file to see if there are any programs that need to be installed manually before running restore.sh"
